@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--divinectorweb.com-->
+<head>
+    <meta charset="UTF-8">
+    <title>How to 3D Pricing Carousel using Materialize CSS</title> 
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">    
+</head>
+<body>   
+    
+  <h2>Wedding Event</h2>
+	<div class="carousel">
+		<div class="carousel-item">
+			<div class="card">
+				<div class="img-area" style="background-image: url(engagement.jpg);"></div>
+				<div class="container">
+					<h4>Pre Wedding</h4>
+					<p><i>Dec 9, 2023 at 2:00 PM</i></p>
+					<p>161 Mumbai, India</p><button class="btn">RSVP</button>
+				</div>
+			</div>
+		</div>
+		<div class="carousel-item">
+			<div class="card">
+				<div class="img-area" style="background-image: url(Wedding\ Cermony.jpg);"></div>
+				<div class="container">
+					<h4>Wedding Ceremony</h4>
+					<p><i>June 14, 2012 at 7:30 PM</i></p>
+					<p>321 Hyderabad, India</p><button class="btn">RSVP</button>
+				</div>
+			</div>
+		</div>
+		<div class="carousel-item">
+			<div class="card">
+				<div class="img-area" style="background-image: url(post1.jpg);"></div>
+				<div class="container">
+					<h4><b>Post Wedding Reception</b></h4>
+					<p><i>Feb 7, 2023 at 2:00 PM</i></p>
+					<p>125 Mumbai, India</p><button class="btn">RSVP</button>
+				</div>
+			</div>
+		</div>
+	</div>
+    
+    <script
+  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+  $(document).ready(function(){
+    $('.carousel').carousel({
+			padding: 200
+	});
+	autoplay();
+	function autoplay() {
+		$('.carousel').carousel('next');
+		setTimeout(autoplay, 4500);
+	}
+  });
+</script>
+</body>
+</html>
